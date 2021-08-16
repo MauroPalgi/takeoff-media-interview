@@ -1,0 +1,36 @@
+html {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  @include breakpoint-down(small) {
+    font-size: 14px;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+main {
+  height: auto;
+  @include breakpoint-up(medium) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

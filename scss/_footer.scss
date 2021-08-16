@@ -1,0 +1,43 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 10em;
+  padding: 2.5em 1em;
+  background-color: black;
+  &__social {
+    display: flex;
+    width: 50%;
+    align-items: center;
+
+    flex-wrap: wrap;
+    &__title {
+      width: 100%;
+      color: white;
+      & p {
+        margin: 0 0 1em 0.5em;
+        font-weight: 300;
+        font-size: 1.3rem;
+      }
+    }
+    &__icons {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      @include breakpoint-up(medium) {
+        width: 20%;
+      }
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+    @include breakpoint-up(medium) {
+      margin-right: 3em;
+      & svg {
+        transform: scale(2);
+      }
+    }
+  }
+}

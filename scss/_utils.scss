@@ -1,0 +1,60 @@
+// Breakpoints
+@media (min-width: 64em) {
+  // styles go here
+}
+
+// 640px, 1024px,
+$breakpoints-up: (
+  "medium": "40em",
+  "large": "64em",
+);
+
+// 639px, 1023px,
+$breakpoints-down: (
+  "small": "39.9375em",
+  "medium": "63.9375em",
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-down($size) {
+  @media (max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.hide_mobile {
+  @include breakpoint-down(medium) {
+    display: none;
+  }
+}
+.full_width_mobile {
+  @include breakpoint-down(medium) {
+    flex: 100%;
+    margin: 0 auto;
+  }
+}
+
+.center_items_mobile {
+  @include breakpoint-down(medium) {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,51 @@
+.swiper {
+  width: 99%;
+  & .swiper-container {
+    height: 13em;
+    @include breakpoint-up(medium) {
+      height: 50em;
+    }
+    & .swiper-wrapper {
+      & .swiper-slide {
+        & img {
+          width: 100%;
+          position: relative;
+          top: -30em;
+          @include breakpoint-down(small) {
+            top: -5em;
+          }
+        }
+      }
+    }
+
+    & .swiper-button-next,
+    .swiper-button-prev {
+      color: white;
+      width: 3em;
+      height: 3.5em;
+      background-color: black;
+      @include breakpoint-down(small) {
+        top: 92%;
+        width: 2em;
+        height: 2.5em;
+        &::after {
+          transform: scale(0.5);
+        }
+      }
+    }
+    & .swiper-button-prev {
+      left: 0;
+      padding-right: 1em;
+      @include breakpoint-down(small) {
+        padding-right: 0.5em;
+      }
+    }
+    & .swiper-button-next {
+      right: 0;
+      padding-left: 1em;
+      @include breakpoint-down(small) {
+        padding-right: 0.5em;
+      }
+    }
+  }
+}

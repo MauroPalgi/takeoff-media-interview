@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 98%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5em 0;
+  @include breakpoint-down(small) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    @include breakpoint-up(medium) {
+      padding-left: 0.5em;
+    }
+    & h1 {
+      font-size: 2em;
+      font-weight: bold;
+    }
+  }
+  &__navbar {
+    &__links {
+      display: flex;
+      justify-content: space-evenly;
+      & a {
+        padding: 0.5em 0.5em;
+        display: block;
+        color: #949494;
+        font-weight: bold;
+        font-size: 1.8em;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+}

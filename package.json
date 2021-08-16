@@ -1,0 +1,35 @@
+{
+  "name": "interview-takeoff-media",
+  "version": "1.0.0",
+  "description": "Interview assessment for FrontEnd Developer",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp dev",
+    "build": "gulp prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauroPalgi/takeoff-interview.git"
+  },
+  "author": "Mauro Palgi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MauroPalgi/takeoff-interview/issues"
+  },
+  "homepage": "https://github.com/MauroPalgi/takeoff-interview#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.27.5",
+    "browserify": "^17.0.0",
+    "gulp": "^4.0.2",
+    "gulp-browserify": "^0.5.1",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.37.5",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "swiper": "^6.8.1"
+  }
+}
