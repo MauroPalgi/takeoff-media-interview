@@ -9,9 +9,9 @@
    ```sh
    npm install
    ```
- 3. Fix audited pacakges 
+3. Fix audited pacakges 
    ```sh
-   npm audit fif
+   npm audit fix
    ```
 4. Start Gulp Server
    ```sh
