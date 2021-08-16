@@ -1,4 +1,4 @@
-# takeoff-media-interview
+# Takeoff Media Interview
 ## Getting Started
 
 1. Clone the repo
